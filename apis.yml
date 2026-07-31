@@ -1,7 +1,24 @@
 aid: neolane
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/neolane.png
 name: Neolane
-description: Neolane is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Neolane was a marketing automation and cross-channel campaign management
+  company, backed by Battery Ventures, that Adobe acquired in 2013 for roughly $600M
+  and rebranded as Adobe Campaign. The former neolane.com domain now 301-redirects to
+  Adobe's Campaign product page, and the company no longer operates an independent
+  developer portal, API, or artifact surface of its own. This profile is retained as
+  a historical portfolio-lead stub; its live API footprint, if any, belongs to Adobe
+  Campaign rather than a standalone Neolane brand.
 url: https://raw.githubusercontent.com/api-evangelist/neolane/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +26,32 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: adobe
+x-acquired-year: 2013
+x-successor: adobe-campaign
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Marketing Automation
+- Campaign Management
+- Email Marketing
+- Acquired
+- Adobe
 apis: []
+common:
+- name: Adobe Campaign (successor product)
+  url: https://business.adobe.com/products/campaign/adobe-campaign.html
+  type: Website
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
